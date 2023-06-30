@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@section Author {
+    <p>Name : @Model.Author?.Name</p>
+    <p>Family : @Model.Author?.Family</p>
+    <p>Description : @Model.Author?.Description</p>
+}
+<form method="post">
+    <input name="Name" placeholder="ali" />
+    <input name="Family" placeholder="mohamadi" />
+    <input name="Description" placeholder="test" />
+    <button type="submit">send</button>
+</form>
+
